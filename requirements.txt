@@ -1,5 +1,5 @@
 streamlit==1.34.0
-openai-whisper @ git+https://github.com/openai/whisper.git
+whisper
 torch
 torchaudio
 librosa
