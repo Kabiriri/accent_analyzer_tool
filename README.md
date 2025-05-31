@@ -151,7 +151,7 @@ Contributions welcome! Please feel free to submit issues and pull requests.
 ### Development Setup
 ```bash
 git clone https://github.com/Kabiriri/accent_analyzer_tool.git
-cd accent_analyzer
+cd accent_analyzer_tool
 pip install -r requirements.txt
 streamlit run app.py
 ```
