@@ -1,12 +1,13 @@
 streamlit==1.34.0
-whisper
-torch
-torchaudio
-librosa
-yt-dlp
-requests
-soundfile
-numpy
-scipy
-huggingface-hub
-speechbrain
+openai-whisper
+torch==2.2.1 --index-url https://download.pytorch.org/whl/cu118
+torchaudio==2.2.1
+librosa==0.10.1
+yt-dlp==2023.12.30
+requests==2.31.0
+soundfile==0.12.1
+numpy==1.26.3
+scipy==1.11.4
+huggingface-hub==0.20.2
+speechbrain==0.5.15
+sentencepiece==0.2.0  # Explicit version that often has pre-built wheels
