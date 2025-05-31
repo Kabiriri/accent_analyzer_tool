@@ -14,7 +14,7 @@ A powerful AI-powered web application that analyzes and identifies accents from 
 
 ## Live Demo
 
-Try the app: [Insert your Streamlit URL here]
+Try the app: https://accentanalyzertool.streamlit.app/
 
 ## How to Use
 
@@ -46,14 +46,14 @@ Try the app: [Insert your Streamlit URL here]
 ## Local Installation
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8+ (preferably 3.10)
 - FFmpeg installed on your system
 
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/accent-analyzer.git
-cd accent-analyzer
+git clone https://github.com/Kabiriri/accent_analyzer_tool.git
+cd accent_analyzer
 
 # Install dependencies
 pip install -r requirements.txt
@@ -70,14 +70,20 @@ streamlit run app.py
 ## Dependencies
 
 ```
-streamlit==1.28.1
-librosa==0.10.1
-yt-dlp==2023.9.24
-speechbrain==0.5.16
+streamlit==1.34.0
 openai-whisper==20231117
-torch==2.1.0
+torch==2.2.1 --extra-index-url https://download.pytorch.org/whl/cu118
+torchaudio==2.2.1 --extra-index-url https://download.pytorch.org/whl/cu118
+librosa==0.10.1
+yt-dlp==2023.12.30
+requests==2.31.0
 soundfile==0.12.1
-numpy==1.24.3
+numpy==1.26.3
+scipy==1.11.4
+huggingface-hub==0.20.2
+speechbrain @ git+https://github.com/speechbrain/speechbrain.git@develop
+sentencepiece==0.1.99
+protobuf==3.20.3  # Required for SpeechBrain
 ```
 
 ## Testing
@@ -87,17 +93,6 @@ numpy==1.24.3
 2. Verify all components are working properly
 3. Check model loading and audio processing
 
-### Example URLs for Testing
-```
-# Short YouTube clips work best
-https://www.youtube.com/watch?v=example
-
-# Loom recordings
-https://www.loom.com/share/example
-
-# Direct audio files
-https://example.com/audio.wav
-```
 
 ## How It Works
 
@@ -155,15 +150,15 @@ Contributions welcome! Please feel free to submit issues and pull requests.
 
 ### Development Setup
 ```bash
-git clone https://github.com/your-username/accent-analyzer.git
-cd accent-analyzer
+git clone https://github.com/Kabiriri/accent_analyzer_tool.git
+cd accent_analyzer
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
@@ -182,7 +177,7 @@ Having issues? Please check the troubleshooting section or open an issue on GitH
 
 ## Deployment Status
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://accentanalyzertool.streamlit.app/)
 
 **Version**: 1.0.0  
 **Last Updated**: 5/31/2025 
