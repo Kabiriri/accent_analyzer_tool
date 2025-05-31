@@ -1,5 +1,5 @@
 streamlit==1.34.0
-whisper @ git+https://github.com/openai/whisper.git
+openai-whisper @ git+https://github.com/openai/whisper.git
 torch
 torchaudio
 librosa
@@ -10,4 +10,3 @@ numpy
 scipy
 huggingface-hub
 speechbrain
-
