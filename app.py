@@ -13,7 +13,7 @@ from typing import Tuple, Dict
 import logging
 import shutil
 
-# This fixes some weird compatibility issues I ran into on Windows
+# This fixes some compatibility issues I ran into on Windows
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 # Basic setup stuff - these values work well from my testing
